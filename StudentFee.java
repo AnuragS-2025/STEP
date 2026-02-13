@@ -1,0 +1,13 @@
+import java.util.*;
+public class StudentFee {
+    public static void main(String a[]) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter student fee (INR): ");
+        double fee = input.nextDouble();
+        System.out.print("Enter university discount percentage: ");
+        double discountPercent = input.nextDouble();
+        double discountAmount = fee * (discountPercent / 100);
+        double finalFee = fee - discountAmount;
+        System.out.println("The discount amount is INR " + discountAmount + " and final discounted fee is INR " + finalFee);
+    }
+}
